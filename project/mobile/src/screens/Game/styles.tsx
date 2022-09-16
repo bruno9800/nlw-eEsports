@@ -1,5 +1,6 @@
 
 import { StyleSheet } from "react-native"
+import { THEME } from "../../theme"
 
 
 export const styles = StyleSheet.create({
@@ -39,5 +40,15 @@ export const styles = StyleSheet.create({
         paddingLeft: 32,
         paddingRight: 64,
         alignItems: "flex-start",
+    },
+    emptyListText: {
+        color: THEME.COLORS.CAPTION_300,
+        fontSize: THEME.FONT_SIZE.MD,
+        fontFamily: THEME.FONT_FAMILY.BOLD
+    },
+    emptyListContent: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
     }
 })
