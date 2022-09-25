@@ -28,14 +28,14 @@ export function App() {
   }, [])
 
   return (
-    <div className= 'max-w-[1366] mx-auto flex flex-col items-center my-20'>
+    <div className= 'max-w-[1266px] mx-auto flex flex-col items-center my-20'>
         <img src={logoImg} alt="logo" />
 
         <h1 className='font-black text-white text-6xl mt-20'>Seu <span className='bg-nlw-gradient text-transparent bg-clip-text'>duo</span> está aqui.</h1>
 
         <div className="grid grid-cols-6 gap-6 mt-16">
-            {games.map(game => {
-              console.log(game) 
+            {games.map( (game, index) => {
+              if(index < 6)
               return (
                   <GameBanner 
                       key={game.id} 
